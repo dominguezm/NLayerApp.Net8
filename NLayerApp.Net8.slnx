@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="NLayerApp.Aplicacion/NLayerApp.Aplicacion.csproj" />
+  <Project Path="NLayerApp.Dominio.PruebaUnit/NLayerApp.Dominio.PruebaUnit.csproj" />
   <Project Path="NLayerApp.Dominio/NLayerApp.Dominio.csproj" />
   <Project Path="NLayerApp.Infraestructura/NLayerApp.Infraestructura.csproj" />
   <Project Path="NLayerApp.Presentacion.Api/NLayerApp.Presentacion.Api.csproj" />
