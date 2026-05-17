@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="NLayerApp.Aplicacion.Pruebas/NLayerApp.Aplicacion.Pruebas.csproj" Id="2e0950e5-c9bb-456b-a89e-6da694d0a29f" />
   <Project Path="NLayerApp.Aplicacion/NLayerApp.Aplicacion.csproj" />
   <Project Path="NLayerApp.Dominio.PruebaUnit/NLayerApp.Dominio.PruebaUnit.csproj" />
   <Project Path="NLayerApp.Dominio/NLayerApp.Dominio.csproj" />
