@@ -13,6 +13,7 @@ El proyecto está diseñado siguiendo una estricta separación de responsabilida
 * **🧠 NLayerApp.Dominio:** El corazón del negocio. Contiene las Entidades (`CuentaBancaria`, `Cliente`), Reglas de Negocio encapsuladas e Interfaces (Contratos). *Cero dependencias externas.*
 * **⚙️ NLayerApp.Aplicacion:** La capa orquestadora. Contiene Casos de Uso (`AppServicioBancario`) y DTOs para evitar exponer las entidades puras a la web.
 * **💾 NLayerApp.Infraestructura:** El acceso a datos. Implementa el patrón Repositorio y UnidadDeTrabajo utilizando **Entity Framework Core 8** y SQL Server LocalDB.
+* **🛠️ NLayerApp.Infraestructura.Transversal:** Capa de infraestructura transversal. Contiene aspectos que cruzan toda la aplicación (Logging, Caching, Seguridad), aislando al dominio de frameworks de terceros mediante el patrón Adapter.
 * **🖥️ NLayerApp.Presentacion.Api:** La puerta de entrada. API RESTful documentada con **Swagger** que actúa como *Composition Root* para inyectar dependencias.
 
 ---

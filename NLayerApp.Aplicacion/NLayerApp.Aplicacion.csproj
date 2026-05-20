@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NLayerApp.Dominio\NLayerApp.Dominio.csproj" />
+    <ProjectReference Include="..\NLayerApp.Infraestructura.Transversal\NLayerApp.Infraestructura.Transversal.csproj" />
   </ItemGroup>
 
 </Project>

@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NLayerApp.Aplicacion\NLayerApp.Aplicacion.csproj" />
     <ProjectReference Include="..\NLayerApp.Dominio\NLayerApp.Dominio.csproj" />
+    <ProjectReference Include="..\NLayerApp.Infraestructura.Transversal\NLayerApp.Infraestructura.Transversal.csproj" />
   </ItemGroup>
 
 </Project>

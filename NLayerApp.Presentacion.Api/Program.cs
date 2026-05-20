@@ -5,6 +5,8 @@ using NLayerApp.Dominio.ModuloBancario.Servicios;
 using NLayerApp.Infraestructura.Data;
 using NLayerApp.Infraestructura.Repositorios;
 
+using NLayerApp.Infraestructura.Transversal.Registros;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1 Registrar Entity Framework Core con la cadena de conexion leida de appsettings.json
@@ -16,6 +18,10 @@ builder.Services.AddDbContext<ContextBancario>(opciones =>
 builder.Services.AddScoped<IRepositorioCuentaBancaria, RepositorioCuentaBancaria>();
 builder.Services.AddScoped<IServicioTransferenciaBancaria, ServicioTransferenciaBancaria>();
 builder.Services.AddScoped<IAppServicioBancario, AppServicioBancario>();
+
+// Registro nuestro Registro Transversal como Singleton (una sola instancia para toda la app)
+// usar Typeof() generico para que funcione con cualquier clase que lo inyecte
+builder.Services.AddSingleton(typeof(IAppRegistro<>), typeof(ArchivoTxtRegistro<>));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
